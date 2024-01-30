@@ -45,4 +45,5 @@ for type_dir in os.listdir(source_dir):
             if cnt >= max_cnt:
                 add_commit_and_push()
                 cnt = 0
+add_commit_and_push()
 print("Done!")
