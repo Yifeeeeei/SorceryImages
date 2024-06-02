@@ -48,12 +48,13 @@ def commit_single_file(file_path):
 
 
 if __name__ == "__main__":
+
+    commit_single_file("update.txt")
+    commit_single_file("update.json")
+
     if not os.path.exists("output"):
         print("output directory does not exist!")
         exit(-1)
     all_files = get_all_files_in_dir_recursively("output")
     commit_and_push(all_files)
     print("All files uploaded successfully!")
-
-    commit_single_file("update.txt")
-    commit_single_file("update.json")
